@@ -1,0 +1,171 @@
+/* mobile/global styles */
+body {
+  background-color: white;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  font-family: Arial;
+}
+h2{
+  font-family: Arial;
+  background-color: blue;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: underline;
+  padding: 5px;
+}
+h3{
+  font-family: Arial;
+  text-decoration: underline;
+  background-color: grey;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+nav a {
+  padding: 1em;
+  background: red;
+  text-decoration-color: black;
+  color: white;
+  transition: all 1s;
+  font-family: Arial;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#Home {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+
+}
+#Reviews {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+nav a:hover{
+  background-color: black;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  border-radius: 15px;
+  padding-bottom: 0;
+  margin-bottom: 1em;
+}
+
+
+.Tlogo img {
+  width: 150px;
+  height: 80px;
+  margin-left: auto;
+  border-radius: 15px;
+  float: right;
+}
+
+.content-homepage {
+  font-family: Arial;
+}
+
+.image-container-content{
+  display: flex;
+  justify-content: center;
+}
+
+.slider-image {
+    width: 150px;
+}
+
+.story-content {
+  font-family: Arial;
+}
+
+.story-content-image img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.G-content {
+  font-family: Arial;
+}
+.R-content {
+  font-family: Arial;
+}
+.C-content {
+  font-family: Arial;
+  margin-top: auto;
+  padding-left: 5px;
+}
+button {
+display: block;
+/*justify-content: center;
+flex-direction: row;
+width: 15%;
+float: left;*/
+margin-left:auto;
+margin-right:auto;
+
+}
+button a{
+  padding: 10px;
+
+}
+textarea{
+  height: 300px;
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  text-align: left;
+}
+.bottom-menu-bar{
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 10px;
+  margin-top: 20px;
+}
+.bottom-menu-bar a{
+  display: block;
+  margin: auto;
+  background: red;
+  padding: 10px;
+  font-family: Arial;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+}
+.bottom-menu-bar a:hover{
+  background-color: blue;
+}
+/* desktop style*/
+@media screen and (min-width: 1000px) {
+
+  .slider-image {
+      width: 300px;
+  }
+
+  .story-content-image img {
+    width: 600px
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

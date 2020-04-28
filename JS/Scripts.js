@@ -1,9 +1,10 @@
 "use strict";
 //sticky menubar that is going to be applied to the bottom menubar
 function myFunction() {
-  if(window.pageYOffset > sticky)
+  if(window.pageYOffset > sticky) {
     header.classList.add("sticky");
 } else {
+} {
   header.classList.remove("sticky");
 }
 }

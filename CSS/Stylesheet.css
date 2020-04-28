@@ -92,8 +92,9 @@ h3 {
   text-decoration: underline;
   background-color: grey;
   margin: auto;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 nav {
@@ -246,13 +247,13 @@ textarea {
 }
 
 .bottom-menu-bar a {
-  margin: 15px;
+  margin: 10px;
   background: red;
   padding: 10px;
   font-family: Arial;
   text-decoration: none;
   color: white;
-  overflow: hidden;
+  border-radius: 15px;
 }
 
 .bottom-menu-bar a:hover {
@@ -304,16 +305,17 @@ textarea {
 @media screen and (min-width: 1000px) {
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-right: 250px;
-    margin-left: 250px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
 
   }
 
   nav a {
-    padding: 1em;
+    padding: 10px 50px 10px 50px;
     background: red;
     text-decoration-color: black;
     color: white;
@@ -324,11 +326,19 @@ textarea {
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    border-radius: 30px;
+    margin: 0px 15px 0px 15px;
   }
 
   h2 {
     margin-top: 0px;
     padding: 15px;
+  }
+
+
+  .title {
+    margin-bottom: 0px;
+    padding-left: 10px;
   }
 
   .content-homepage {
@@ -365,15 +375,20 @@ textarea {
 
   .Character-description {
     border: 5px solid grey;
-    padding: auto;
     margin: 10px;
     text-align: center;
+    padding: 5px;
   }
 
   .character-content {
     margin: 100px;
     border: 5px solid blue;
     border-radius: 20px;
+  }
+
+  .C-content {
+    text-align: center;
+    padding: 10px;
   }
 
   .guides-content {
@@ -393,8 +408,8 @@ textarea {
   .form-content {
     border: 5px solid blue;
     border-radius: 20px;
-    margin: 50px 100px 500px 100px;
-    padding-bottom: 500px;
+    margin: 50px 100px 400px 100px;
+    padding-bottom: 200px;
   }
 
   .form-input-button {
@@ -405,4 +420,26 @@ textarea {
   .stars {
     margin: 0px 0px 25px 100px;
   }
+
+  .bottom-menu-bar {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .bottom-menu-bar a {
+    margin: 10px 25px 0px 25px;
+    background: red;
+    padding: 10px 50px 10px 50px;
+    font-family: Arial;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+
 }

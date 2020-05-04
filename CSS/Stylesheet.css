@@ -1,6 +1,6 @@
 /* mobile/global styles */
 :root {
-  --primary-color: white;
+  --primary-color: grey;
 }
 
 [data-theme="dark"] {
@@ -80,7 +80,7 @@ h1 {
 
 h2 {
   font-family: Arial;
-  background-color: blue;
+  background-color: #00C4C8;
   text-align: center;
   border-radius: 10px;
   text-decoration: underline;
@@ -90,7 +90,7 @@ h2 {
 h3 {
   font-family: Arial;
   text-decoration: underline;
-  background-color: grey;
+  background-color: #FD7601;
   margin: auto;
   padding: 10px;
   border-top-left-radius: 10px;
@@ -107,7 +107,7 @@ nav {
 
 nav a {
   padding: 1em;
-  background: red;
+  background: #FD7601;
   text-decoration-color: black;
   color: white;
   transition: all 1s;
@@ -138,7 +138,7 @@ nav a:hover {
 .title {
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  background-color: #00C4C8;
   border-radius: 15px;
   padding-bottom: 0;
   margin-bottom: 1em;
@@ -179,8 +179,7 @@ nav a:hover {
 .story-content img {
   width: 400px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 10px auto;
 }
 
 .guides-content {
@@ -206,13 +205,24 @@ nav a:hover {
 
 .Character-description {
   background-color: white;
+  border: 5px solid grey;
+  margin-bottom: 30px;
+  border-radius: 23px;
+
 }
 
 .C-content {
   font-family: Arial;
-  margin-top: auto;
+  margin: 10px 5px 0px 5px;
   padding-left: 5px;
   border-color: grey;
+}
+.Character-description img {
+  width: 20%;
+  display: block;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 10px auto 10px auto;
 }
 
 .form-content {
@@ -263,12 +273,7 @@ textarea {
 
 .character-content {
   border-radius: 1px;
-}
-
-.Character-description {
-  border: 5px solid grey;
-  margin-bottom: 20px;
-  border-radius: 23px;
+  margin-bottom: 100px;
 }
 
 .star {

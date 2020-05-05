@@ -4,7 +4,7 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: black;
+  --primary-color: #00FFFF;
 }
 
 body {
@@ -80,7 +80,7 @@ h1 {
 
 h2 {
   font-family: Arial;
-  background-color: #00C4C8;
+  background-color: #0A41C1;
   text-align: center;
   border-radius: 10px;
   text-decoration: underline;
@@ -138,7 +138,7 @@ nav a:hover {
 .title {
   display: flex;
   justify-content: space-between;
-  background-color: #00C4C8;
+  background-color: #0A41C1;
   border-radius: 15px;
   padding-bottom: 0;
   margin-bottom: 1em;
@@ -166,7 +166,12 @@ nav a:hover {
 }
 
 .slider-image {
-  width: 150px;
+  width: 30%;
+  padding-bottom: 10px;
+}
+
+.C-homepage{
+  padding: 0px 5px 5px 5px;
 }
 
 .story-content {
@@ -177,9 +182,13 @@ nav a:hover {
 }
 
 .story-content img {
-  width: 400px;
+  width: 70%;
   display: block;
   margin: 10px auto 10px auto;
+}
+
+.S-content {
+  padding: 0px 5px 5px 5px;
 }
 
 .guides-content {
@@ -190,10 +199,11 @@ nav a:hover {
 .G-content {
   font-family: Arial;
   margin-bottom: 100px;
+  padding: 0px 5px 20px 5px;
 }
 
 .review-content {
-  margin-bottom: 50px;
+
 }
 
 .R-content {
@@ -201,11 +211,11 @@ nav a:hover {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 100px;
+  padding: 10px;
 }
 
 .Character-description {
   background-color: white;
-  border: 5px solid grey;
   margin-bottom: 30px;
   border-radius: 23px;
 
@@ -220,15 +230,15 @@ nav a:hover {
 .Character-description img {
   width: 20%;
   display: block;
-  /*margin-left: auto;
-  margin-right: auto;*/
   margin: 10px auto 10px auto;
+  padding-bottom: 10px;
 }
 
 .form-content {
   background-color: white;
   border-radius: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
+  margin-bottom: 100px;
 }
 
 textarea {
@@ -252,18 +262,19 @@ textarea {
   padding: 10px;
   margin-top: 20px;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
 }
 
 .bottom-menu-bar a {
   margin: 10px;
-  background: red;
+  background: #FD7601;
   padding: 10px;
   font-family: Arial;
   text-decoration: none;
   color: white;
   border-radius: 15px;
+  transition: all 1s;
 }
 
 .bottom-menu-bar a:hover {
@@ -277,12 +288,14 @@ textarea {
 }
 
 .star {
-  color: goldenrod;
+  content: "\2606";
+  color: #FFDF00;
   font-size: 2.0rem;
-  padding: 0 1;
+  padding: 0px 1px
+
 }
 
-.star::before {
+.star::after {
   content: '\2606';
   cursor: pointer;
 }
@@ -295,6 +308,7 @@ textarea {
   counter-reset: rateme 0;
   font-size: 2.0rem;
   font-weight: 900;
+  padding: 10px;
 }
 
 .star.rated {
@@ -321,7 +335,7 @@ textarea {
 
   nav a {
     padding: 10px 50px 10px 50px;
-    background: red;
+    background: #FD7601;
     text-decoration-color: black;
     color: white;
     transition: all 1s;
@@ -333,6 +347,10 @@ textarea {
     border-right: 1px solid black;
     border-radius: 30px;
     margin: 0px 15px 0px 15px;
+  }
+
+  nav a:hover{
+    background-color: blue;
   }
 
   h2 {
@@ -348,25 +366,25 @@ textarea {
 
   .content-homepage {
     margin: 50px 225px 0px 225px;
-    border: 5px solid blue;
+    border: 5px solid black;
     border-radius: 20px;
     background-color: white;
   }
 
   .slider-image {
-    width: 300px;
+    width: 30%;
   }
 
   .story-content {
     margin: 50px 225px 150px 225px;
-    border: 5px solid blue;
+    border: 5px solid black;
     border-radius: 20px;
     background-color: white;
 
   }
 
   .story-content img {
-    width: 600px;
+    width: 60%;
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -379,7 +397,7 @@ textarea {
   }
 
   .Character-description {
-    border: 5px solid grey;
+    border: 5px solid #FD7601;
     margin: 10px;
     text-align: center;
     padding: 5px;
@@ -387,8 +405,9 @@ textarea {
 
   .character-content {
     margin: 100px;
-    border: 5px solid blue;
+    border: 5px solid #FD7601;
     border-radius: 20px;
+    background: black;
   }
 
   .C-content {
@@ -397,21 +416,21 @@ textarea {
   }
 
   .guides-content {
-    border: 5px solid blue;
+    border: 5px solid black;
     margin: 50px 50px 100px 50px;
     background-color: white;
     border-radius: 20px;
   }
 
-  .reivew-content {
-    border: 5px solid blue;
+  .review-content {
+    border: 5px solid black;
     margin: 50px 100px 100px 100px;
     background-color: white;
     border-radius: 20px;
   }
 
   .form-content {
-    border: 5px solid blue;
+    border: 5px solid black;
     border-radius: 20px;
     margin: 50px 100px 400px 100px;
     padding-bottom: 200px;
@@ -439,7 +458,7 @@ textarea {
 
   .bottom-menu-bar a {
     margin: 10px 25px 0px 25px;
-    background: red;
+    background: #FD7601;
     padding: 10px 50px 10px 50px;
     font-family: Arial;
     text-decoration: none;

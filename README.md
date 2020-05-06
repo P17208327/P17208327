@@ -34,9 +34,8 @@ this page allows users who view the website to rate the game so that other membe
 2. dark mode: This is a slider button icon that changes the websites background to a darker colour allowing certain users who may prefer the website to be in a different style or have difficulty seeing in a certain colour.
 
 #Reference
-https://www.w3schools.com/
-https://tk7.tekken.com/
-https://tk7.tekken.com/
-https://en.wikipedia.org/wiki/Tekken_7
-https://www.youtube.com/watch?v=dPCj6Qkq13Y
-https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+1.https://www.w3schools.com/
+2.https://tk7.tekken.com/
+3.https://en.wikipedia.org/wiki/Tekken_7
+4.https://www.youtube.com/watch?v=dPCj6Qkq13Y
+5.https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8

@@ -8,7 +8,7 @@ function myFunction() {
   header.classList.remove("sticky");
 }
 }
-//dark mode setting to change the background of website to dark
+//dark mode setting to change the background of website to dark mode
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
@@ -27,8 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let stars = document.querySelectorAll('.star');
   stars.forEach(function(star) { // for each star selected apply a setRating
     star.addEventListener('click', setRating);
-  })
-})
+  });
+
+  let rating = parseInt(document.querySelector('.stars').getAttribute('data-rating'));
+  let target = stars[rating - 1];
+  target.dispatchEvent(new MouseEvent('click'));
+});
 //setRating function chages the value of the maximum of 5 to 1 depending what is selected
 function setRating(ev) {
   let span = ev.currentTarget;
@@ -41,10 +45,11 @@ function setRating(ev) {
     } else {
       star.classList.add('rated');
     }
+    //looking for the span that was clicked
     if(star === span) {
       match = true;
       num = index + 1;
     }
-  })
+  });
   document.querySelector('.stars').setAttribute('data-rating', num);
 }

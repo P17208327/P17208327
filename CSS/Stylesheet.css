@@ -4,7 +4,7 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #00FFFF;
+  --primary-color: purple;
 }
 
 body {
@@ -202,10 +202,6 @@ nav a:hover {
   padding: 0px 5px 20px 5px;
 }
 
-.review-content {
-
-}
-
 .R-content {
   font-family: Arial;
   background-color: white;
@@ -288,20 +284,19 @@ textarea {
 }
 
 .star {
-  content: "\2606";
   color: #FFDF00;
   font-size: 2.0rem;
   padding: 0px 1px
 
 }
 
-.star::after {
+.star::before {
   content: '\2606';
   cursor: pointer;
 }
 
 .star.rated::before {
-  content '\2605';
+  content:'\2605';
 }
 
 .stars {
@@ -401,6 +396,10 @@ textarea {
     margin: 10px;
     text-align: center;
     padding: 5px;
+  }
+
+  .Character-description img{
+    width: 40%;
   }
 
   .character-content {
